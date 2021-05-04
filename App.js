@@ -38,6 +38,7 @@ const App: () => Node = () => {
             backgroundColor: 'white',
             paddingTop: 40,
           }}>
+            {/* search bar */}
             <View style={{
               marginHorizontal: 17,
               flexDirection: 'row',
@@ -82,6 +83,90 @@ const App: () => Node = () => {
                 />
               </View>
             </View>
+          {/* gopay */}
+          <View 
+            style={{
+              marginHorizontal: 17,
+              marginTop: 8,
+            }}
+          >
+            <View style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              backgroundColor:  '#2C5FB8',
+              borderTopLeftRadius: 4,
+              borderTopRightRadius: 4,
+              padding: 14
+            }}>
+              <Image
+                source={require('./icon/gopay.png')}
+              />
+              <Text
+                style={{
+                  fontSize: 17,
+                  fontWeight: 'bold',
+                  color: 'white'
+                }}
+              >Rp. 50.000</Text>
+            </View>
+            <View style={{
+              flexDirection: 'row',
+              paddingTop: 20,
+              paddingBottom: 14,
+              backgroundColor: '#2C5FB8',
+              borderBottomLeftRadius: 4,
+              borderBottomRightRadius: 4,
+            }}>
+              <View style={{
+                flex: 1,
+                alignItems: 'center',
+              }}>
+                <Image source={require('./icon/pay.png')} />
+                <Text style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15 
+                }}>Pay</Text>
+              </View>
+              <View style={{
+                flex: 1,
+                alignItems: 'center',
+              }}>
+                <Image source={require('./icon/nearby.png')} />
+                <Text style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15 
+                }}>Nearby</Text>
+              </View>
+              <View style={{
+                flex: 1,
+                alignItems: 'center',
+              }}>
+                <Image source={require('./icon/topup.png')} />
+                <Text style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15 
+                }}>Top Up</Text>
+              </View>
+              <View style={{
+                flex: 1,
+                alignItems: 'center',
+              }}>
+                <Image source={require('./icon/more.png')} />
+                <Text style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: 15 
+                }}>More</Text>
+              </View>
+            </View>
+          </View>
           </View>
           <View style={{
             height: 54,
