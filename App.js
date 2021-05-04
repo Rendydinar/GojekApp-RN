@@ -8,7 +8,8 @@ import {
   Text,
   useColorScheme,
   View,
-  Image
+  Image,
+  TextInput,
 } from 'react-native';
 
 import {
@@ -34,9 +35,53 @@ const App: () => Node = () => {
         >
           <View style={{
             flex: 1,
-            backgroundColor: 'gray'
+            backgroundColor: 'white',
+            paddingTop: 40,
           }}>
-            
+            <View style={{
+              marginHorizontal: 17,
+              flexDirection: 'row',
+              paddingTop: 15
+            }}>
+              <View 
+                style={{
+                  position: 'relative',
+                  flex: 1
+                }}
+              >
+                <TextInput 
+                  placeholder="What do you want to ear ?" 
+                  style={{
+                    borderWidth: 1,
+                    borderColor: '#43AB4A',
+                    borderRadius: 25,
+                    height: 40,
+                    fontSize: 13,
+                    paddingLeft: 45,
+                    paddingRight: 20,
+                    backgroundColor: 'white',
+                    marginRight: 18
+                  }}
+                />
+                <Image 
+                  source={require('./icon/search.png')} 
+                  style={{
+                    position: 'absolute',
+                    top: 5,
+                    left: 12 
+                  }}
+                />
+              </View>
+              <View style={{
+                width: 35,
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <Image 
+                  source={require('./icon/promo.png')} 
+                />
+              </View>
+            </View>
           </View>
           <View style={{
             height: 54,
