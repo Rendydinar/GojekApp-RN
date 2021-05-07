@@ -241,12 +241,32 @@ const App: () => Node = () => {
             </TouchableOpacity>
           </View>
         </View>
+        {/*Internal Information Section*/}
+        <View style={{padding: 16, paddingBottom: 0}}>
+            <View style={{height: 15, width: 60, marginLeft: -4}}>
+              <Image source={require('./logo/gojek.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />              
+            </View>            
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1C1C1C', marginTop: 15, marginBottom: 20}}>Complete your profile</Text>
+            <View style={{flexDirection: 'row', marginBottom: 16}}>
+              <View>
+                <Image source={require('./dummy/facebook-connect.png')} />
+              </View>
+              <View style={{marginLeft: 16, flex: 1}}>
+                <Text style={{fontSize: 15, fontWeight: 'bold', color: '#4A4A4A'}}>Connect with Facebook</Text>
+                <Text style={{fontSize: 15, fontWeight: 'normal', color: '#4A4A4A', width: '70%'}}>Login faster without verification code</Text>
+              </View>
+            </View>
+            <TouchableOpacity style={{backgroundColor: '#61A756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4}}>
+              <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', textAlign: 'center'}}>CONNECT</Text>
+            </TouchableOpacity>
+            <View style={{borderBottomColor: '#E8E9ED', borderBottomWidth: 1, marginTop: 16}}></View>
+        </View>
         {/*GoFood Banner Section*/}
         <View style={{padding: 16}}>
           <View style={{position: 'relative'}}>
             <Image source={require('./dummy/food-banner.jpg')} style={{height: 200, width: '100%', borderRadius: 6}} />          
             <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, opacity: 0.2, backgroundColor: 'black', borderRadius: 6}}></View>
-            <View style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}}>
+            <View style={{height: 15, width: 60, position: 'absolute', top: 16, left: 16}}>
               <Image source={require('./logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />              
             </View>            
             <View style={{position: 'absolute', bottom: 0, left: 0, width: '100%' , flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingBottom: 16}}>
